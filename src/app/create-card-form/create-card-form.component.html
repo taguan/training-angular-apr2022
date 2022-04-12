@@ -1,0 +1,13 @@
+<form class="card-form card" [formGroup]="newCardForm">
+  <div class="card-body">
+    <div class="mb-3">
+      <label for="titleInput" class="form-label">Title</label>
+      <input type="text" class="form-control" id="titleInput" placeholder="New card title" formControlName="title">
+    </div>
+    <div class="mb-3">
+      <label for="descriptionInput" class="form-label">Description</label>
+      <textarea class="form-control" id="descriptionInput" rows="3" formControlName="description"></textarea>
+    </div>
+    <button [disabled]="!newCardForm.valid"  type="button" class="btn btn-primary" (click)="addCard()">Create card</button>
+  </div>
+</form>
