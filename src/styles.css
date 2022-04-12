@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.scrum-board {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.scrum-column {
+  background-color: lightyellow;
+  width: 400px;
+}
+
+
+.scrum-column-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.card {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-form {
+
+}
