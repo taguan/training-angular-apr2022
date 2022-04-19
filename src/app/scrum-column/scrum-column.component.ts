@@ -20,7 +20,9 @@ export class ScrumColumnComponent implements OnInit {
   constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
-    this.cards = this.cardService.getCards(this.state);
+    this.cardService.getCards(this.state).subscribe((cards) => {
+      this.cards = cards;
+    });
     this.cardService.newCardEmitter.subscribe(card => {
       if (card.state === this.state) {
         this.cards.push(card);

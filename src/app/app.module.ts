@@ -6,6 +6,7 @@ import { ScrumColumnComponent } from './scrum-column/scrum-column.component';
 import { ScrumCardComponent } from './scrum-card/scrum-card.component';
 import { CreateCardFormComponent } from './create-card-form/create-card-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ReactiveFormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
